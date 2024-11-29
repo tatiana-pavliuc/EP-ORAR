@@ -1,7 +1,8 @@
+/* Устанавливаем фон страницы */
 body {
     height: 130vh;
     width: 100%;
-    background: url('image/bguniv.png') no-repeat center center;
+    background: url('images/bguniv.png') no-repeat center center;
     background-size: cover;
     position: relative;
     margin: 0px;
@@ -9,365 +10,415 @@ body {
     font-family: 'Times New Roman', Times, serif;
     }
     
-.container {
-    display: flex;
-    height: 100%; 
-    padding-left: 40px; 
-    margin-left: 119.600px;
-    margin-right: 119.600px;
-    margin-top: 20px;
-}
+    .container {
+        display: flex;
+        height: 100%; 
+        padding-left: 40px; 
+        margin-left: 119.600px;
+        margin-right: 119.600px;
+        margin-top: 20px;
+    }
     
     
-.left {
-    width: 40%;
-    display: flex;
-    flex-direction:column;
-    justify-content: start;
-    align-items: center;
-    padding-left: 40px;
-}
+    .left {
+        width: 40%;
+        display: flex;
+        flex-direction:column;
+        justify-content: start;
+        align-items: center;
+        padding-left: 40px;
+    }
     
     
-.right {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-     align-items: center;
-    padding-left: 40px;
-    padding-right: 40px;
-}
+    .right {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
     
     
-.header {
-    background-color: white;  /* Белый фон */
-    width: 100%;
-    padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 1.25rem;
-    line-height: 1.4;
-    text-align: center !important;
-    color: #666;
-    font-weight: 900;
-    margin-bottom: 20px;
-}
-
-.categorii {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    cursor: pointer;
-}
+    .header {
+        background-color: white;  /* Белый фон */
+        width: 100%;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 1.25rem;
+        line-height: 1.4;
+        text-align: center !important;
+        color: #666;
+        font-weight: 900;
+        margin-bottom: 20px;
+    }
     
     
-.rectangle {
-    background-color: #25975a;
-    padding: 0px 30px;
-    text-align: center;
-}
+    .categorii {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        cursor: pointer;
+    }
     
     
-.rectangle p {
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-}
+    .rectangle {
+        background-color: #25975a;
+        padding: 0px 30px;
+        text-align: center;
+    }
     
-.regim {
-    display: flex; 
-    justify-content:space-between; 
-    align-items: flex-start;
-     margin-top: 10px;
     
-}
+    .rectangle p {
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+    }
     
-.text-regim {
-    margin: 10px 0 10px 0;
-}
+    .regim {
+        display: flex; 
+        justify-content:space-between; 
+        align-items: flex-start;
+         margin-top: 10px;
+        
+    }
+        
+    .text-regim {
+        margin: 10px 0 10px 0;
+    }
+        
+    .text-regim p {
+        color: #fff;
+        font-weight: 900;
+    }
+        
+    .switch {
+        position: relative;
+        margin-top: 20px;
+        width: 60px;
+        height: 30px;
+      }
+      
+    .switch-input {
+        display: none;
+      }
+      
+    .switch-label {
+        position: absolute;
+        align-items: center center;
+        width: 100%;
+        height: 100%;
+        background-color: #ccc;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+    .switch-button {
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 26px;
+        height: 26px;
+        background-color: #fff;
+        border-radius: 50%;
+        transition: transform 0.3s ease;
+      }
+      
     
-.text-regim p {
-    color: #fff;
-    font-weight: 900;
-}
+    .switch-input:checked + .switch-label {
+        background-color: #4caf50;
+      }
+      
+    .switch-input:checked + .switch-label .switch-button {
+        transform: translateX(30px); /* Двигаем кнопку вправо */
+      }
     
-.switch {
-    position: relative;
-    margin-top: 20px;
-    width: 60px;
-    height: 30px;
-  }
-  
-.switch-input {
-    display: none;
-  }
-  
-.switch-label {
-    position: absolute;
-    align-items: center center;
-    width: 100%;
-    height: 100%;
-    background-color: #ccc;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-.switch-button {
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 26px;
-    height: 26px;
-    background-color: #fff;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
-  }
-  
-
-.switch-input:checked + .switch-label {
-    background-color: #4caf50;
-  }
-  
-.switch-input:checked + .switch-label .switch-button {
-    transform: translateX(30px); /* Двигаем кнопку вправо */
-  }
-  
-.search-bar {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin-top: 5px;
-    background-color: #fff;
-  
-}
+    .search-bar {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-top: 5px;
+        background-color: #fff;
+      
+    }
     
-.search-bar .search-icon {
-    width: 20px;
-    height: 20px;
-    background-image: url('image/search-icon.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-right: 10px;
-    margin-left: 10px;
-    cursor: pointer;
-}
+    .search-bar .search-icon {
+        width: 20px;
+        height: 20px;
+        background-image: url('images/search-icon.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right: 10px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
     
     /* Поле ввода */
-.search-bar input {
-    border: none;
-    outline: none;
-    flex-grow: 1; /* Поле ввода растягивается на всю доступную ширину */
-    font-size: 16px;
-    color: #333;
-    padding: 8px 0;
-    background: transparent;
-}
+    .search-bar input {
+        border: none;
+        outline: none;
+        flex-grow: 1; /* Поле ввода растягивается на всю доступную ширину */
+        font-size: 16px;
+        color: #333;
+        padding: 8px 0;
+        background: transparent;
+    }
     
     
-.search-bar .clear-icon {
-    width: 18px;
-    height: 18px;
-    background-image: url('image/clear-icon.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    margin-left: 10px;
-    margin-right: 10px;
-}
+    .search-bar .clear-icon {
+        width: 18px;
+        height: 18px;
+        background-image: url('images/clear-icon.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
     
     
-.white-rectangle {
-    width: 100%;
-    height: 100px;
-    background-color: #fff;
-    margin-top: 20px;
-}
+    .white-rectangle {
+        width: 100%;
+        height: 100px;
+        background-color: #fff;
+        margin-top: 20px;
+    }
     
-.week, .day {
-    width: 100%;
-    background-color: #fff;
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 0px 10px 0px; 
-}
+    .week, .day {
+        width: 100%;
+        background-color: #fff;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0px 10px 0px; 
+    }
     
-.arrows-icon {
-    width: 18px;
-    height: 18px;
-     background-image: url('image/arrows.png');
-    background-size: contain; /* Масштабируем изображение */
-    background-repeat: no-repeat;
-    cursor: pointer;
-    margin: 0;
-    padding-right: 10px;
-}
+    .arrows-icon {
+        width: 18px;
+        height: 18px;
+        background-image: url('images/arrows.png');
+        background-size: contain; /* Масштабируем изображение */
+        background-repeat: no-repeat;
+        cursor: pointer;
+        margin: 0;
+        padding-right: 10px;
+    }
     
-.choose-wd {
-    font-size: 16px;
-    font-weight: bold;
-    color: #666;
-    margin: 0;
-    padding-left: 10px;
-}
-
-/* Стиль для таблицы */
-.table-container {
-    width: 100%;
-    margin-top: 20px;
-}
-
-/* Стиль самой таблицы */
-.table-container table {
-    width: 100%;
-    border-collapse: collapse; /* Убираем промежутки между ячейками */
-}
-
-/* Стиль для ячеек */
-.table-container th,
-.table-container td {
-    border: 1px solid rgb(0, 0, 0);
-    text-align: center;
-    background-color: #fff;
-}
-
-/* Зеленый цвет для первого столбца и первого ряда */
-.table-container th:first-child,
-.table-container td:first-child {
-    background-color: #25975a;
-    color: white;
-    width: 120px !important;
-    font-weight: 400;
+    .choose-wd {
+        font-size: 16px;
+        font-weight: bold;
+        color: #666;
+        margin: 0;
+        padding-left: 10px;
+    }
     
-}
-
-/* Стиль для ячеек в первой строке */
-.table-container th {
-    background-color: #25975a;
-    color: white;
-}
-
-.table-container td {
-    width: 50px !important;
-    max-width: 100%;
-}
-
-.table-container tr {
-    height: 25px;
-}
-
-.table-container td {
-    width: calc(50px * 2); /* Ширина ячеек в 2 раза больше высоты (50px) */
-}
-
-.text-block{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.text-white{
-    margin-top: 0px;
-    margin-left: 10px;
-    margin-bottom: 30px;
-    font-size: 12px;
-    color: white;
-    font-weight: 900;
+    /* Стиль для таблицы */
+    .table-container {
+        width: 100%;
+        margin-top: 20px;
+    }
     
-}
-
-.button-container {
-    display: flex;
-    justify-content: flex-start;
-    gap: 10px;
-}
-
-.button1 {
-    display: flex;
-    justify-content: flex-start;
-    border: 1px solid white;
-    background-color: #25975A;
-    color: white;
-    padding: 0 10px;
-    line-height: 1.5;
-    font-size: .875rem;
-    border-radius: 2px;
-    font-weight: 400;
-    cursor: pointer;
-    height: 23px;
-    width: 140px
-}
-
-.button1 img, .button2 img {
-    width: 20px;
-    margin-left: 7px;
-}
-
-.button2 {
-    display: flex;
-    justify-content: flex-start;
-    background-color: #f0506e;
-    color: white;
-    padding: 0 10px;
-    line-height: 1.5;
-    font-size: .875rem;
-    border-radius: 2px;
-    font-weight: 400;
-    cursor: pointer;
-    height: 23px;
-    width: 110px
-}
-
-.button3 {
-    display: flex;
-    justify-content: flex-start;
-    background-color:  rgb(123, 70, 105);
-    color: white;
-    padding: 0 10px;
-    line-height: 1.5;
-    font-size: .875rem;
-    border-radius: 2px;
-    font-weight: 400;
-    cursor: pointer;
-    height: 23px;
-    width: 120px
-}
-
-.button3 img {
-    width: 20px;
-    margin-left: 10px !important;
-}
-
-.advert {
-    width: 100%; /* Занимает всю доступную ширину */
-    background: #edfbf6;
-    color: #32d296;
-    margin-top: 20px;
-    position: relative;
-    padding-left: 15px;
-    line-height: 1.5;
-}
-
-.advert p {
-    font-size: 16px;
-    font-weight: 400; 
-}
-
-.logo{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-
-.logo img{
-    margin-bottom: 10px !important;
-    width: 130px;
-}
+    /* Стиль самой таблицы */
+    .table-container table {
+        width: 100%;
+        border-collapse: collapse; /* Убираем промежутки между ячейками */
+    }
     
+    /* Стиль для ячеек */
+    .table-container th,
+    .table-container td {
+        border: 1px solid rgb(0, 0, 0);
+        text-align: center;
+        background-color: #fff;
+    }
+    
+    /* Зеленый цвет для первого столбца и первого ряда */
+    .table-container th:first-child,
+    .table-container td:first-child {
+        background-color: #25975a;
+        color: white;
+        width: 120px !important;
+        font-weight: 400;
+        
+    }
+    
+    /* Стиль для ячеек в первой строке */
+    .table-container th {
+        background-color: #25975a;
+        color: white;
+    }
+    
+    .table-container td {
+        width: 50px !important;
+        max-width: 100%;
+    }
+    
+    .table-container tr {
+        height: 25px;
+    }
+    
+    .table-container td {
+        width: calc(50px * 2); /* Ширина ячеек в 2 раза больше высоты (50px) */
+    }
+    
+    .text-block{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .text-white{
+        margin-top: 0px;
+        margin-left: 10px;
+        margin-bottom: 30px;
+        font-size: 12px;
+        color: white;
+        font-weight: 900;
+        
+    }
+    
+    .button-container {
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    
+    .button1 {
+        display: flex;
+        justify-content: flex-start;
+        border: 1px solid white;
+        background-color: #25975A;
+        color: white;
+        padding: 0 10px;
+        line-height: 1.5;
+        font-size: .875rem;
+        border-radius: 2px;
+        font-weight: 400;
+        cursor: pointer;
+        height: 23px;
+        width: 140px
+    }
+    
+    .button1 img, .button2 img {
+        width: 20px;
+        margin-left: 7px;
+    }
+    
+    .button2 {
+        display: flex;
+        justify-content: flex-start;
+        background-color: #f0506e;
+        color: white;
+        padding: 0 10px;
+        line-height: 1.5;
+        font-size: .875rem;
+        border-radius: 2px;
+        font-weight: 400;
+        cursor: pointer;
+        height: 23px;
+        width: 110px
+    }
+    
+    .button3 {
+        display: flex;
+        justify-content: flex-start;
+        background-color:  rgb(123, 70, 105);
+        color: white;
+        padding: 0 10px;
+        line-height: 1.5;
+        font-size: .875rem;
+        border-radius: 2px;
+        font-weight: 400;
+        cursor: pointer;
+        height: 23px;
+        width: 120px
+    }
+    
+    .button3 img {
+        width: 20px;
+        margin-left: 10px !important;
+    }
+    
+    .advert {
+        width: 100%; /* Занимает всю доступную ширину */
+        background: #edfbf6;
+        color: #32d296;
+        margin-top: 20px;
+        position: relative;
+        padding-left: 15px;
+        line-height: 1.5;
+    }
+    
+    .advert p {
+        font-size: 16px;
+        font-weight: 400; 
+    }
+    
+    .logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    
+    .logo img{
+        margin-bottom: 10px !important;
+        width: 130px;
+    }
+    
+    .logo h4 {
+        color: white;
+        font-weight: 900;
+        text-align: center !important;
+        font-size: 1.25rem;
+        line-height: 1.4;
+        margin: 0 0 20px 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+    
+    
+    /* Стиль для таблицы */
+    .table-orar {
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    /* Стиль самой таблицы */
+    .table-orar table {
+        width: 100%;
+        border-collapse: collapse; /* Убираем промежутки между ячейками */
+    }
+    
+    /* Стиль для ячеек */
+    .table-orar th,
+    .table-orar td {
+        border: 1px solid rgb(0, 0, 0);
+        text-align: center;
+        background-color: #fff;
+    }
+    
+    /* Зеленый цвет для первого столбца и первого ряда */
+    .table-orar th:first-child {
+        background-color: #25975a;
+        color: white;
+        width: 20% !important;
+        font-weight: 400;
+    }
+    
+    /* Стиль для ячеек в первой строке */
+    .table-orar th {
+        background-color: #25975a;
+        color: white;
+    }
+    
+    .table-orar td {
+        width: 80% !important;
+        max-width: 100%;
+    }
     
