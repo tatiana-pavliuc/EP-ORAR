@@ -63,78 +63,96 @@ body {
     }
     
     
-    .rectangle {
-        background-color: #25975a;
-        padding: 0px 30px;
-        text-align: center;
+    .categorii {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
     }
     
+    .rectangle {
+        display: none; /* Скрываем радиокнопки */
+    }
     
-    .rectangle p {
+    .rectangle + label {
+        background-color: #25975a;
+        padding: 10px 30px;
+        text-align: center;
         color: white;
         font-size: 16px;
         font-weight: bold;
-        text-align: center;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
     }
+    
+    .rectangle + label:hover {
+        background-color: white;
+        color: black;
+    }
+    
+    .rectangle:checked + label {
+        background-color: white;
+        color: black;
+    }
+    
     
     .regim {
         display: flex; 
-        justify-content:space-between; 
-        align-items: flex-start;
-         margin-top: 10px;
-        
+        justify-content: flex-start; /* Выравниваем по левому краю */
+        align-items:center; /* Центрируем по вертикали */
+        margin-top: 10px;
     }
-        
+    
     .text-regim {
-        margin: 10px 0 10px 0;
+        margin: 10px 15px 10px 0; /* Отступы: сверху, справа, снизу, слева */
     }
-        
+    
     .text-regim p {
         color: #fff;
         font-weight: 900;
     }
-        
+    
     .switch {
         position: relative;
-        margin-top: 20px;
+        margin-top: 0; /* Убираем дополнительный отступ сверху */
         width: 60px;
         height: 30px;
-      }
-      
+    }
+    
     .switch-input {
         display: none;
-      }
-      
+    }
+    
     .switch-label {
         position: absolute;
-        align-items: center center;
+        align-items: center;
         width: 100%;
         height: 100%;
         background-color: #ccc;
-        border-radius: 30px;
+        border-radius: 0px;
         cursor: pointer;
         transition: background-color 0.3s ease;
-      }
-      
+    }
+    
     .switch-button {
         position: absolute;
-        top: 2px;
-        left: 2px;
-        width: 26px;
-        height: 26px;
+        top: 4px;
+        left: 4px;
+        width: 20px;
+        height: 20px;
         background-color: #fff;
-        border-radius: 50%;
+        border-radius: 0%;
         transition: transform 0.3s ease;
-      }
-      
+    }
     
     .switch-input:checked + .switch-label {
-        background-color: #4caf50;
-      }
-      
+        background-color: #25975A;
+    }
+    
     .switch-input:checked + .switch-label .switch-button {
         transform: translateX(30px); /* Двигаем кнопку вправо */
-      }
+    }
+    
     
     .search-bar {
         display: flex;
@@ -142,7 +160,6 @@ body {
         width: 100%;
         margin-top: 5px;
         background-color: #fff;
-      
     }
     
     .search-bar .search-icon {
@@ -156,17 +173,15 @@ body {
         cursor: pointer;
     }
     
-    /* Поле ввода */
     .search-bar input {
         border: none;
         outline: none;
-        flex-grow: 1; /* Поле ввода растягивается на всю доступную ширину */
+        flex-grow: 1;
         font-size: 16px;
         color: #333;
         padding: 8px 0;
         background: transparent;
     }
-    
     
     .search-bar .clear-icon {
         width: 18px;
@@ -179,12 +194,27 @@ body {
         margin-right: 10px;
     }
     
-    
     .white-rectangle {
         width: 100%;
-        height: 100px;
         background-color: #fff;
         margin-top: 20px;
+        max-height: 200px;
+        overflow-y: auto;
+    }
+    
+    .white-rectangle ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .white-rectangle li {
+        padding: 8px;
+        cursor: pointer;
+    }
+    
+    .white-rectangle li:hover {
+        background-color: #f0f0f0;
     }
     
     .week, .day {
@@ -215,6 +245,7 @@ body {
         margin: 0;
         padding-left: 10px;
     }
+    
     
     /* Стиль для таблицы */
     .table-container {
@@ -264,7 +295,42 @@ body {
     .table-container td {
         width: calc(50px * 2); /* Ширина ячеек в 2 раза больше высоты (50px) */
     }
-    
+
+    .violet {
+        background-color: #5B59EC !important; /* Жёлтый цвет */
+        color: white; /* Черный цвет текста */
+      }
+
+      .brown {
+        background-color: #A85400 !important; /* Жёлтый цвет */
+        color: white; /* Черный цвет текста */
+      }
+
+      .green {
+        background-color: #76BD49 !important; /* Жёлтый цвет */
+        color: white; /* Черный цвет текста */
+      }
+
+      .yellow {
+        background-color: #D7D700 !important; /* Жёлтый цвет */
+        color: white; /* Черный цвет текста */
+      }
+
+      .pink {
+        background-color: #FF80C0 !important; /* Жёлтый цвет */
+        color: white; /* Черный цвет текста */
+      }
+
+      .bordo {
+        background-color: #800040 !important; /* Жёлтый цвет */
+        color: white; /* Черный цвет текста */
+      }
+
+      .salad {
+        background-color: #A3F1BC !important; /* Жёлтый цвет */
+        color: rgb(255, 255, 255); /* Черный цвет текста */
+      }
+
     .text-block{
         display: flex;
         flex-wrap: wrap;

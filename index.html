@@ -15,18 +15,18 @@
             </div>
 
 
-            <!-- Контейнер для трех прямоугольников под хидером -->
             <div class="categorii">
-                <div class="rectangle">
-                    <p>Grupe</p>
-                </div>
-                <div class="rectangle">
-                    <p>Profesori</p>
-                </div>
-                <div class="rectangle">
-                    <p>Aule</p>
-                </div>
+                <input type="radio" id="grupe" name="category" class="rectangle" />
+                <label for="grupe">Grupe</label>
+            
+                <input type="radio" id="profesori" name="category" class="rectangle" />
+                <label for="profesori">Profesori</label>
+            
+                <input type="radio" id="aule" name="category" class="rectangle" />
+                <label for="aule">Aule</label>
             </div>
+            
+            
 
           <!-- Контейнер для режима -->
           <div class="regim">
@@ -40,29 +40,41 @@
                 </label>
             </div>
         </div> 
+        
+        <!-- Поисковая строка -->
+<div class="search-bar">
+    <div class="search-icon"></div>  <!-- Иконка лупы -->
+    <input type="text" placeholder="Поиск..." id="search-input">
+    <div class="clear-icon"></div>  <!-- Иконка крестика -->
+</div>
+
+<!-- Прямоугольник под поисковой строкой -->
+<div class="white-rectangle">
+    <ul id="suggestions-list">
+        <li>MI11Z</li>
+        <li>MI21Z</li>
+        <li>MI31Z</li>
+        <li>MI41Z</li>
+        <li>Pavliuc Tatiana</li>
+        <li>Borș Valeria</li>
+        <li>224</li>
+        <li>234</li>
+        <li>235</li>
+    </ul>
+</div>
             
 
-            <!-- Поисковая строка -->
-            <div class="search-bar">
-                <div class="search-icon"></div>  <!-- Иконка лупы -->
-                <input type="text" placeholder="Поиск..." id="search-input">
-                <div class="clear-icon"></div>  <!-- Иконка крестика -->
-            </div>   
-            
-            <!-- Прямоугольник под поисковой строкой -->
-            <div class="white-rectangle"></div>
+ <!-- Недели -->
+ <div class="week">
+    <div class="choose-wd">Săptămâna</div>
+    <div class="arrows-icon"></div> <!-- Иконка стрелочки -->
+</div>
 
-            <!-- Недели -->
-            <div class="week">
-                <div class="choose-wd">Săptămâna</div>
-                <div class="arrows-icon"></div> <!-- Иконка стрелочки -->
-            </div>
-
-            <!-- Дни -->
-            <div class="day">
-                <div class="choose-wd">Zi</div>
-                <div class="arrows-icon"></div> <!-- Иконка стрелочки -->
-            </div>
+<!-- Дни -->
+<div class="day">
+    <div class="choose-wd">Zi</div>
+    <div class="arrows-icon"></div> <!-- Иконка стрелочки -->
+</div>
 
             <!-- Таблица -->
              <div class="table-container">
@@ -82,50 +94,50 @@
                     <tbody>
                         <tr>
                             <th>L</th> <!-- Первая ячейка первого столбца -->
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td class="brown">P</td>
+                            <td class="pink">S</td>
+                            <td class="violet">S</td>
+                            <td class="bordo">L</td>
                             <td></td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <th>Ma</th> <!-- Вторая ячейка первого столбца -->
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td class="salad">L</td>
+                            <td class="brown">S</td>
+                            <td class="violet">L</td>
+                            <td class="green">S</td>
                             <td></td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <th>Mi</th>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td class="bordo">EP</td>
+                            <td class="yellow">L</td>
+                            <td class="green">S</td>
+                            <td class="brown">S</td>
                             <td></td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <th>J</th>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td class="violet">P</td>
+                            <td class="yellow">P</td>
+                            <td class="salad">L</td>
+                            <td class="pink">S</td>
                             <td></td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <th>V</th>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td class="violet">P</td>
+                            <td class="green">L</td>
+                            <td class="bordo">P</td>
+                            <td class="brown">S</td>
                             <td></td>
                             <td></td>
                             <td></td>
